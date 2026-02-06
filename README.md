@@ -1,3 +1,8 @@
+## About This Repository
+
+This repository is originally based on code by **Naofumi Kagami**.  
+The goal of this version is to refactor and improve the code while practicing the techniques described in the **second edition of _Refactoring_ by Martin Fowler**.
+
 # Summary
 
 This repository provides executable code of the examples provided in
