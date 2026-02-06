@@ -10,4 +10,5 @@ public class ExtractMethodTest {
         double amount = 1000;
         extractMethod.printOwning(name,amount);
     }
+
 }
