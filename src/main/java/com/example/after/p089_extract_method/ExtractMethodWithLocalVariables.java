@@ -1,40 +1,34 @@
 package com.example.after.p089_extract_method;
 
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class ExtractMethodWithLocalVariables {
-    private ArrayList<Order> orders = new ArrayList<Order>();
-
-    public static void main( String[] args )
-    {
-        new ExtractMethodWithLocalVariables().printOwning("Seedtech", 250);
-    }
-
-    public ExtractMethodWithLocalVariables() {
-        Order order1 = new Order(10);
-        Order order2 = new Order(100);
-        orders.add(order1);
-        orders.add(order2);
-    }
-
-    void printOwning(String name, double previousAmount) {
-        double outstanding = previousAmount * 1.2;
-
+    void printOwning(Invoice invoice) {
         printBanner();
-        // calculate outstanding
-        for (Order order: orders) {
-            outstanding += order.getAmount();
-        }
-
-        //print details
-        System.out.println ("name:" + name);
-        System.out.println ("amount:" + outstanding);
-     }
-
-    private void printBanner() {
-        // print banner
+        Integer outstanding = calculateOutstandoing(invoice.getOrders());
+        recordDueDate(invoice);
+        printInvoiceDetails(invoice, outstanding);
+    }
+    private void printBanner(){
         System.out.println ("**************************");
         System.out.println ("***** Customer Owes ******");
         System.out.println ("**************************");
+    }
+    private void printInvoiceDetails(Invoice invoice, Integer outstanding){
+        System.out.println ("name:" + invoice.getCustomer().getName());
+        System.out.println ("amount: " + outstanding);
+    }
+    private Integer calculateOutstandoing(List<Order> lstOrder){
+        Integer result = 0;
+        for (Order order: lstOrder) {
+            result += order.getAmount();
+        }
+        return result;
+    }
+    private void recordDueDate(Invoice invoice){
+        Date today = new Date();
+        invoice.setDueDate( new Date(today.getYear(), today.getMonth(), today.getDay() + 30));
     }
 }

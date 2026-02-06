@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExtractMethodNoLocalVariablesTest {
+public class ExtractMethodWithLocalVariablesTest {
     @Test
-    public void ExtractMethodNoLocalVariablesTest() {
-        ExtractMethodNoLocalVariables testMethod = new ExtractMethodNoLocalVariables();
+    public void ExtractMethodWithLocalVariablesTest() {
+        ExtractMethodWithLocalVariables testMethod = new ExtractMethodWithLocalVariables();
 
         Invoice invoice = new Invoice();
         Customer customer = new Customer("parinaz");
