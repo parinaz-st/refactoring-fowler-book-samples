@@ -1,6 +1,6 @@
 ## About This Repository
 
-This repository is originally based on code by **Naofumi Kagami**.  
+This repository is originally based on code by **Naofumi Kagami** and can be found [here](https://github.com/naofumi/refactoring)  
 The goal of this version is to refactor and improve the code while practicing the techniques described in the **second edition of _Refactoring_ by Martin Fowler**.
 
 # Summary
