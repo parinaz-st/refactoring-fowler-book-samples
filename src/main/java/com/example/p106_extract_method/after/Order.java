@@ -1,4 +1,4 @@
-package com.example.after.p089_extract_method;
+package com.example.p106_extract_method.after;
 
 public class Order {
     private Integer amount;

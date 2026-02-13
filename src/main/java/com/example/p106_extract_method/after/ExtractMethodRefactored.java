@@ -1,4 +1,4 @@
-package com.example.before.p089_extract_method;
+package com.example.p106_extract_method.after;
 
 public class ExtractMethodRefactored {
     void printOwning(String name, double amount) {

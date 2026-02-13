@@ -1,11 +1,9 @@
-package com.example.before.p089_extract_method;
-
-import com.example.after.p089_extract_method.Order;
+package com.example.p106_extract_method.before;
 
 import java.util.ArrayList;
 
 public class ExtractMethodWithLocalVariables {
-    private ArrayList<com.example.after.p089_extract_method.Order> orders = new ArrayList<com.example.after.p089_extract_method.Order>();
+    private ArrayList<Order> orders = new ArrayList<Order>();
 
     public static void main( String[] args )
     {
@@ -13,8 +11,8 @@ public class ExtractMethodWithLocalVariables {
     }
 
     public ExtractMethodWithLocalVariables() {
-        com.example.after.p089_extract_method.Order order1 = new com.example.after.p089_extract_method.Order(10);
-        com.example.after.p089_extract_method.Order order2 = new com.example.after.p089_extract_method.Order(100);
+        Order order1 = new Order(10);
+        Order order2 = new Order(100);
         orders.add(order1);
         orders.add(order2);
     }

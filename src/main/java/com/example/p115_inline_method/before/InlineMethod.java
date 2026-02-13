@@ -1,4 +1,4 @@
-package com.example.before.p095_inline_method;
+package com.example.p115_inline_method.before;
 
 public class InlineMethod {
     private int numberOfLateDeliveries;

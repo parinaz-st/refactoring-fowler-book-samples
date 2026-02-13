@@ -1,21 +1,18 @@
-package com.example.before.p089_extract_method;
-
-import com.example.after.p089_extract_method.Customer;
-import com.example.after.p089_extract_method.Order;
+package com.example.p106_extract_method.before;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Invoice {
-    private List<com.example.after.p089_extract_method.Order> orders;
+    private List<Order> orders;
     private Date dueDate;
-    private com.example.after.p089_extract_method.Customer customer;
+    private Customer customer;
 
     public Invoice() {
         orders = new ArrayList<>();
     }
-    public List<com.example.after.p089_extract_method.Order> getOrders() {
+    public List<Order> getOrders() {
         return orders;
     }
 
@@ -31,7 +28,7 @@ public class Invoice {
         this.dueDate = dueDate;
     }
 
-    public com.example.after.p089_extract_method.Customer getCustomer() {
+    public Customer getCustomer() {
         return customer;
     }
 

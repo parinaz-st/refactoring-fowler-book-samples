@@ -1,6 +1,5 @@
-package com.example.after.p089_extract_method;
+package com.example.p106_extract_method.after;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 

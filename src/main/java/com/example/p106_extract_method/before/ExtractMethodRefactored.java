@@ -1,12 +1,12 @@
-package com.example.after.p089_extract_method;
+package com.example.p106_extract_method.before;
 
-public class ExtractMethod {
+public class ExtractMethodRefactored {
     void printOwning(String name, double amount) {
         printBanner();
         printDetails(name, amount);
     }
 
-    private void printDetails(String name, double amount) {
+    private static void printDetails(String name, double amount) {
         System.out.println("name: " + name);
         System.out.println("amount: " + amount);
     }
@@ -14,4 +14,5 @@ public class ExtractMethod {
     private void printBanner() {
         System.out.println("--- Banner ---");
     }
+
 }

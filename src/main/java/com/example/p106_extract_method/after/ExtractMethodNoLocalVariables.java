@@ -1,7 +1,4 @@
-package com.example.before.p089_extract_method;
-
-import com.example.after.p089_extract_method.Invoice;
-import com.example.after.p089_extract_method.Order;
+package com.example.p106_extract_method.after;
 
 import java.util.Date;
 
